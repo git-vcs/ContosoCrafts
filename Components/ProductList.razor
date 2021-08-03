@@ -57,10 +57,10 @@
                     {
                         <span>@voteCount @voteLabel</span>
                     }
-                    @for (int i = 0; i < 6; i++)
+                    @for (int i = 1; i < 7; i++)
                     {
                         var currentStar = i;
-                        if (i < currentRating)
+                        if (i <= currentRating)
                         {
                             <span class="fa-star fa checked" @onclick="( e => SubmitRating(currentStar))" ></span>
                         }
